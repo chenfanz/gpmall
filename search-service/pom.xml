@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.gpmall.search</groupId>
+    <groupId>com.mall.search</groupId>
     <artifactId>search-service</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -15,7 +15,7 @@
 
     <name>search-service</name>
     <!-- FIXME change it to the project's website -->
-    <url>http://www.gpmall.com</url>
+    <url>http://www.cskaoyan.com</url>
 
     <distributionManagement>
         <repository>

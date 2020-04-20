@@ -21,7 +21,7 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-	<groupId>com.gpmall.user</groupId>
+	<groupId>com.mall.user</groupId>
 	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>user-service</name>

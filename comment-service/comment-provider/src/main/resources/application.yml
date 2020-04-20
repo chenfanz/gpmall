@@ -1,9 +1,9 @@
 spring:
   profiles:
-    active: prod
+    active: dev
 mybatis:
-  mapper-locations: classpath*:com/gpmall/comment/dal/persistence/*Mapper.xml"
-  type-aliases-package: com.gpmall.comment.dal.entitys
+  mapper-locations: classpath*:com/mall/comment/dal/persistence/*Mapper.xml"
+  type-aliases-package: com.mall.comment.dal.entitys
 pagehelper:
   helper-dialect: mysql
   reasonable: true

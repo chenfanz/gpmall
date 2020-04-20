@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gpmall-user
+    name: mall-user
   profiles:
     active: dev
 server:

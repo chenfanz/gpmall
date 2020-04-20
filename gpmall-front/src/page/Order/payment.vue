@@ -205,6 +205,7 @@
 </script>
 <style lang="scss" scoped rel="stylesheet/scss">
   .w {
+
     padding-top: 39px;
   }
 

@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.gpmall.parent</groupId>
-        <artifactId>gpmall-parent</artifactId>
+        <groupId>com.mall.parent</groupId>
+        <artifactId>mall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.gpmall.order</groupId>
+    <groupId>com.mall.order</groupId>
     <artifactId>order-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>order-provider</name>
@@ -74,14 +74,14 @@
         </dependency>
 
         <dependency>
-            <groupId>com.gpmall.order</groupId>
+            <groupId>com.mall.order</groupId>
             <version>1.0-SNAPSHOT</version>
             <artifactId>order-api</artifactId>
         </dependency>
 
         <dependency>
             <artifactId>user-api</artifactId>
-            <groupId>com.gpmall.user</groupId>
+            <groupId>com.mall.user</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -91,7 +91,7 @@
         </dependency>
         <dependency>
             <artifactId>shopping-api</artifactId>
-            <groupId>com.gpmall.shopping</groupId>
+            <groupId>com.mall.shopping</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -106,8 +106,9 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
+        <!--引入消息队列-->
         <dependency>
-            <groupId>com.gpmall.commons</groupId>
+            <groupId>com.mall.commons</groupId>
             <artifactId>commons-mq</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -119,7 +120,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.gpmall.order.bootstrap.OrderProviderApplication</mainClass>
+                    <mainClass>com.mall.order.bootstrap.OrderProviderApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

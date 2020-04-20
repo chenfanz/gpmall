@@ -80,7 +80,7 @@
             <div class="cart-items" v-for="(item,i) in orderList" :key="i">
               <a @click="goodsDetails(item.productId)" class="img-box"><img :src="item.productImg" alt=""></a>
               <div class="name-cell ellipsis">
-                <a @click="goodsDetails(item.productId)" title="" target="_blank">{{item.productName}}</a>
+                <a @click="goodsDetails(orderList)" title="" target="_blank">{{item.productName}}</a>
               </div>
               <div class="n-b">
                 <div class="price">¥ {{Number(item.salePrice).toFixed(2)}}</div>
@@ -178,9 +178,9 @@
           }
           this.orderList = res.result.goodsList
           this.orderTotal = res.result.orderTotal
-          this.userName = res.result.addressInfo.userName
-          this.tel = res.result.addressInfo.tel
-          this.streetName = res.result.addressInfo.streetName
+          this.userName = res.result.userName
+          this.tel = res.result.tel
+          this.streetName = res.result.streetName
           this.createTime = res.result.createDate
           this.closeTime = res.result.closeDate
           this.payTime = res.result.payDate

@@ -46,7 +46,7 @@ dubbo:
     cycle-report: false
     group: dubbo-dev
   scan:
-    base-packages: com.gpmall.user.services
+    base-packages: com.mall.user.services
 
 
 

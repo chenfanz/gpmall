@@ -3,8 +3,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.gpmall.parent</groupId>
-        <artifactId>gpmall-parent</artifactId>
+        <groupId>com.mall.parent</groupId>
+        <artifactId>mall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -12,7 +12,7 @@
 
     <name>search-provider</name>
     <!-- FIXME change it to the project's website -->
-    <url>http://www.gpmall.com</url>
+    <url>http://www.cskaoyan.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,7 +27,7 @@
         <!--<version>2012_u6</version>-->
         <!--</dependency>-->
         <dependency>
-            <groupId>com.gpmall.search</groupId>
+            <groupId>com.mall.search</groupId>
             <artifactId>search-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -130,7 +130,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.gpmall.search.bootstrap.SearchProviderApplication</mainClass>
+                    <mainClass>com.mall.search.bootstrap.SearchProviderApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

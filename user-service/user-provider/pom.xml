@@ -2,19 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<groupId>com.gpmall.parent</groupId>
-		<artifactId>gpmall-parent</artifactId>
+		<groupId>com.mall.parent</groupId>
+		<artifactId>mall-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>user-provider</artifactId>
 	<name>user-provider</name>
-	<groupId>com.gpmall.user</groupId>
+	<groupId>com.mall.user</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
-		<docker.image.prefix>gpmall</docker.image.prefix>
+		<docker.image.prefix>mall</docker.image.prefix>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -57,7 +57,7 @@
 		</dependency>
 		<dependency>
 			<artifactId>user-api</artifactId>
-			<groupId>com.gpmall.user</groupId>
+			<groupId>com.mall.user</groupId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
@@ -90,14 +90,16 @@
 			<artifactId>redisson</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.gpmall.commons</groupId>
+			<groupId>com.mall.commons</groupId>
 			<artifactId>commons-tool</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.kafka</groupId>-->
+			<!--<artifactId>spring-kafka</artifactId>-->
+		<!--</dependency>-->
+
+		<!--邮件发送-->
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>javax.mail-api</artifactId>
@@ -106,9 +108,17 @@
 			<groupId>com.sun.mail</groupId>
 			<artifactId>javax.mail</artifactId>
 		</dependency>
+
+		<!--freemarker-->
 		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
+		</dependency>
+<!--引入消息队列-->
+		<dependency>
+			<groupId>com.mall.commons</groupId>
+			<artifactId>commons-mq</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -118,7 +128,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.gpmall.user.bootstrap.UserProviderApplication</mainClass>
+					<mainClass>com.mall.user.bootstrap.UserProviderApplication</mainClass>
 				</configuration>
 				<executions>
 					<execution>

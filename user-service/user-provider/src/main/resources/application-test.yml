@@ -28,6 +28,10 @@ spring:
       max-idle: 10
       max-wait: 3000
       min-idle: 4
+mq:
+  nameserver:
+    addr: 127.0.0.1:9876
+  topicname: user-register-succ-topic
 dubbo:
   application:
     name: user-service
@@ -46,7 +50,7 @@ dubbo:
     cycle-report: false
     group: dubbo-dev
   scan:
-    base-packages: com.gpmall.user.services
+    base-packages: com.mall.user.services
 
 
 
